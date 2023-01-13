@@ -3,15 +3,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home';
+import Common from './pages/Common';
 import About from './pages/About';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
+import StudentReg from './pages/Register/StudentReg';
+import BlockForm from './pages/BlockChange/BlockForm';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Common />} />
         <Route path="/about" element={<About />} />
+        <Route path='/login' element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/register" element={<StudentReg />} />
+        <Route path="/blockchange" element={<BlockForm />} />
       </Routes>
     </Router>
   );
