@@ -1,0 +1,17 @@
+.roomcard {
+  background: linear-gradient(
+      142.03deg,
+      rgba(201, 201, 201, 0.034) 16.89%,
+      rgba(0, 0, 0, 0.0376) 89.48%
+    ),
+    rgba(34, 34, 34, 0.19);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  height: 85%;
+}
+
+.button {
+  background: #f37e3c;
+  border-radius: 8px;
+  width: 40%;
+}

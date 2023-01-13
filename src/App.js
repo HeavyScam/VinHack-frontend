@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Profile from './pages/Profile';
 import StudentReg from './pages/Register/StudentReg';
 import BlockForm from './pages/BlockChange/BlockForm';
+import AllRooms from './pages/AvailableRooms/AllRooms';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/register" element={<StudentReg />} />
         <Route path="/blockchange" element={<BlockForm />} />
+        <Route path="/availablerooms" element={<AllRooms />} />
       </Routes>
     </Router>
   );
