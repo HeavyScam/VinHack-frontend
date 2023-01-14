@@ -1,6 +1,9 @@
 import React from 'react'
 import "./StudentReg.css"
 
+import Image1 from "../../assets/image1.svg"
+import Image2 from "../../assets/image2.svg"
+
 const StudentReg = () => {
     const [signUp, setSignup] = React.useState({
         firstName: '',
@@ -18,11 +21,13 @@ const StudentReg = () => {
 
     return (
         <>
+            
             <header className="sticky top-0 z-50 grid grid-cols-3 drop-shadow-md p-5 md:px-10">
                 <h2>
-                    <span className="text-white">HOSTEL </span><span className="text-white"> HOPPER</span>
+                    <span className="text-white">HOSTEL </span><span className="text-white" style={{color:"#6441E7", fontWeight:"bold"}}> HOPPER</span>
                 </h2>
             </header>
+            <img src={Image1} alt="image1" className="image1" />
             <form className='login-signup-form' onSubmit={handleSignup}
             >
                 <h2 className="register">STUDENT INFO</h2>
@@ -33,14 +38,14 @@ const StudentReg = () => {
                             (e) =>
                                 setSignup({ ...signUp, firstName: e.target.value })
                         }
-                        id="fname" className='inputs' required />
+                        id="fname" className='email-inputs' required />
                     <input type="text" placeholder="Last Name"
                         value={signUp.lastName}
                         onChange={
                             (e) =>
                                 setSignup({ ...signUp, lastName: e.target.value })
                         }
-                        id="lname" className='inputs' required />
+                        id="lname" className='email-inputs' required />
                 </div>
                 <div className="input-wrapper">
                     <input type="text" placeholder="Registration Number"
@@ -93,6 +98,7 @@ const StudentReg = () => {
                     <button className='btn'>SUBMIT</button>
                 </div>
             </form>
+            <img src={Image2} alt="image2" className="image2" />
         </>
     )
 }

@@ -13,5 +13,6 @@
 .button {
   background: #f37e3c;
   border-radius: 8px;
-  width: 40%;
+  width: 60%;
+  height: 40px;
 }

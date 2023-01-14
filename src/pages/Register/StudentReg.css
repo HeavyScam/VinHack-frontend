@@ -4,13 +4,25 @@ header > h2 {
 
 .register {
   text-align: center;
-  background: linear-gradient(90deg, #6f54d3 0%, #2103ec 143.4%);
+  background: linear-gradient(90deg, #866bea 0%, #0421ff 143.4%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 3.5%;
+  font-weight: 800 !important;
+}
+
+.image1{
+  position: absolute;
+  right: 0%;
+}
+
+.image2{
+  position: absolute;
+  bottom: 0%;
+  left:5%;
 }
 
 .input-wrapper {
@@ -77,11 +89,11 @@ header > h2 {
     rgba(255, 255, 255, 0) 0.89%,
     rgba(110, 83, 211, 0.09) 76.88%
   );
-  height: 50px;
-  width: 98%;
+  height: 60px;
+  width: 100%;
   border-radius: 3px;
-  padding: 0 10px;
-  margin: 20px 30px 10px 0px;
+  /* padding: 0 10px; */
+  margin: 20px 10px 10px 0px;
   font-size: 14px;
   font-weight: 300;
   border: 1px solid rgba(255, 255, 255, 0.33);
@@ -91,8 +103,8 @@ header > h2 {
 .email-inputs,
 .phone-inputs {
   display: block;
-  height: 50px;
-  width: 95%;
+  /* height: 50px; */
+  width: 100%;
   border-radius: 3px;
   padding: 0 10px;
   margin: 20px 10px 10px 0px;
@@ -107,6 +119,13 @@ header > h2 {
   border: 1px solid rgba(255, 255, 255, 0.33);
   border-radius: 12px;
 }
+
+.email-inputs::placeholder{
+  /* center */
+  text-align: center;
+
+}
+
 
 .phone-inputs::-webkit-inner-spin-button,
 .phone-inputs::-webkit-outer-spin-button {

@@ -1,5 +1,5 @@
 import React from 'react'
-import sampleImg from '../assets/samplepic.png'
+import sampleImg from '../assets/samplepic.svg'
 import "./RoomCard.css"
 
 function RoomCard() {
@@ -12,11 +12,11 @@ function RoomCard() {
     // }, [])
 
     return (
-        <div className="my-10 mx-8 w-3/4 roomcard">
+        <div className="my-10 mx-8 roomcard" style={{width:"80%"}}>
             <div className="rounded overflow-hidden h-full">
-                <img src={
-                    sampleImg
-                } />
+                <div style={{display:"flex",alignContent:"center", justifyContent:"center"}}>
+                <img src={sampleImg} style={{display:"flex",alignContent:"center", justifyContent:"center", marginTop:"10%"}}/>
+                </div>
                 <div className="px-6 py-4">
                     <div className="text-orange-600 mb-2 px-2">
                         Block:
@@ -24,10 +24,11 @@ function RoomCard() {
                     <p className="text-orange-600 mb-3 px-2">Room Number:</p>
                     <p className="text-orange-600 mb-3 px-2">Beds:</p>
                 </div>
-
+                <div style={{display:"flex",alignContent:"center", justifyContent:"center"}}>
                 <button className="bg-orange-600 text-white font-bold mx-5 mb-5 button px-5 py-2">
                     Request
                 </button>
+                </div>
 
             </div>
         </div>

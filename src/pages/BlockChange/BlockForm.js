@@ -1,6 +1,9 @@
 import React from 'react'
 import "./BlockForm.css"
 
+import Image3 from "../../assets/image3.svg"
+import Image4 from "../../assets/image4.svg"
+
 const BlockForm = () => {
     const [signUp, setSignup] = React.useState({
         blockName: '',
@@ -15,12 +18,12 @@ const BlockForm = () => {
         <>
             <header className="sticky top-0 z-50 grid grid-cols-3 drop-shadow-md p-5 md:px-10">
                 <h2>
-                    <span className="text-white">HOSTEL </span><span className="text-white"> HOPPER</span>
+                    <span className="text-white">HOSTEL </span><span className="text-white" style={{color:"#23A3F6", fontWeight:"bold"}}> HOPPER</span>
                 </h2>
             </header>
-            <form className='login-signup-form' onSubmit={handleSignup}
+            <form className='request-signup-form' onSubmit={handleSignup}
             >
-                <h2 className="register">REQUEST ROOM</h2>
+                <h2 className="request">REQUEST ROOM</h2>
                 <div className="input-wrapper">
                     <select name="blockName" id="blockName" className='inputs'
                         value={signUp.blockName}
@@ -53,7 +56,10 @@ const BlockForm = () => {
                 <div className="submit-wrapper">
                     <button className='btn'>SUBMIT</button>
                 </div>
+                
             </form>
+            <img src={Image3} alt="image3" className="image3" />
+            <img src={Image4} alt="image4" className="image4" />
         </>
     )
 }
