@@ -12,22 +12,28 @@ function RoomCard() {
     // }, [])
 
     return (
-        <div className="my-10 mx-8 roomcard" style={{width:"80%"}}>
+        <div className="my-10 mx-8 roomcard" style={{ width: "80%" }}>
             <div className="rounded overflow-hidden h-full">
-                <div style={{display:"flex",alignContent:"center", justifyContent:"center"}}>
-                <img src={sampleImg} style={{display:"flex",alignContent:"center", justifyContent:"center", marginTop:"10%"}}/>
+                <div style={{ display: "flex", alignContent: "center", justifyContent: "center" }}>
+                    <img src={sampleImg}
+                        alt='sample'
+                    />
                 </div>
                 <div className="px-6 py-4">
                     <div className="text-orange-600 mb-2 px-2">
-                        Block:
+                        Block: <span className="text-white"> Q Block</span>
                     </div>
-                    <p className="text-orange-600 mb-3 px-2">Room Number:</p>
-                    <p className="text-orange-600 mb-3 px-2">Beds:</p>
+                    <p className="text-orange-600 mb-3 px-2">Room Number:
+                        <span className="text-white"> 711</span>
+                    </p>
+                    <p className="text-orange-600 mb-3 px-2">Beds:
+                        <span className="text-white"> 2</span>
+                    </p>
                 </div>
-                <div style={{display:"flex",alignContent:"center", justifyContent:"center"}}>
-                <button className="bg-orange-600 text-white font-bold mx-5 mb-5 button px-5 py-2">
-                    Request
-                </button>
+                <div style={{ display: "flex", alignContent: "center", justifyContent: "center" }}>
+                    <button className="bg-orange-600 text-white font-bold mx-5 mb-5 button px-5 py-2">
+                        Request
+                    </button>
                 </div>
 
             </div>
