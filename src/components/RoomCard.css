@@ -16,3 +16,27 @@
   width: 60%;
   height: 40px;
 }
+
+.keys{
+  height: 200%;
+  position: absolute;
+  right: 0%;
+  top: -60%;
+}
+
+.grad {
+  font-weight: 700;
+  background: linear-gradient(90deg, #FD9910 1.95%, #FF1158 88.32%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+
+.btn1{
+  background: linear-gradient(91.04deg, rgba(251, 251, 251, 0.09) 0.89%, rgba(140, 140, 140, 0.0261) 76.88%);
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom, #FD99108F, #FF115873);
+  border-image-slice: 1;
+  border-radius: 16px;
+}

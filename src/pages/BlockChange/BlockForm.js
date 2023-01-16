@@ -13,6 +13,7 @@ const BlockForm = () => {
     const handleSignup = (e) => {
         e.preventDefault()
         console.log(signUp)
+        window.location.href = "/availablerooms"
     }
     return (
         <>

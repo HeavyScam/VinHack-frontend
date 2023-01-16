@@ -17,7 +17,13 @@ const StudentReg = () => {
     const handleSignup = (e) => {
         e.preventDefault()
         console.log(signUp)
+        window.location.href = "/blockchange"
+
     }
+
+
+
+
 
     return (
         <>
@@ -38,9 +44,12 @@ const StudentReg = () => {
                             (e) =>
                                 setSignup({ ...signUp, firstName: e.target.value })
                         }
-                        id="fname" className='email-inputs' required />
+                        id="fname" className='email-inputs' 
+                        style={{ textAlign: "center" }}
+                        required />
                     <input type="text" placeholder="Last Name"
                         value={signUp.lastName}
+                        style={{ textAlign: "center" }}
                         onChange={
                             (e) =>
                                 setSignup({ ...signUp, lastName: e.target.value })
@@ -54,6 +63,7 @@ const StudentReg = () => {
                             (e) =>
                                 setSignup({ ...signUp, regNo: e.target.value })
                         }
+                        
                         id="email" className='email-inputs'
                         required />
                 </div>
@@ -94,7 +104,7 @@ const StudentReg = () => {
                         id="email" className='email-inputs'
                         required />
                 </div>
-                <div className="submit-wrapper">
+                <div className="submit-wrapper" >
                     <button className='btn'>SUBMIT</button>
                 </div>
             </form>

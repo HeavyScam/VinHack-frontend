@@ -120,11 +120,6 @@ header > h2 {
   border-radius: 12px;
 }
 
-.email-inputs::placeholder{
-  /* center */
-  text-align: center;
-
-}
 
 
 .phone-inputs::-webkit-inner-spin-button,

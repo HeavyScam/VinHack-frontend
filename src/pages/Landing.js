@@ -1,33 +1,37 @@
 import React from 'react'
-import landingimg from "../assets/landingimage.png"
 
-function Landing() {
+import Keys from '../assets/Keys.svg'
+
+function Home() {
     return (
         <>
-            <header className="sticky top-0 z-50 grid grid-cols-3 drop-shadow-md p-5 md:px-10">
+            <header className="sticky top-0 z-50 grid grid-cols-3 drop-shadow-md p-5 md:px-10" style={{ display: "block" }}>
                 <h2>
-                    <span className="text-white">HOSTEL </span><span className="text-white"> HOPPER</span>
+                    <span className="text-white">HOSTEL </span><span className="text-white" style={{ color: "#FD9910", fontWeight: "bold" }}> HOPPER</span>
+                    <button className=" text-white flex-end font-bold py-2 px-10" style={{ backgroundColor: "#FD9910", borderRadius: "12px", float: "right", fontSize: "16px" }}>
+                        <a href="/register">SIGN UP</a>
+                    </button>
                 </h2>
             </header>
 
-            {/* Some text in the left and img on the right
-             */}
-            <section className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 py-20 px-5">
-                <div className="flex flex-col justify-center">
-                    <h1 className="text-4xl font-extralight text-white">WANT TO CHANGE ROOMS?</h1>
-                    <h1 className="text-4xl font-bold text-orange-600">CHANGE YOUR ROOM IN 3 SIMPLE STEPS</h1>
+            <div className="grid grid-cols-3 drop-shadow-md p-5 md:px-10" style={{ display: "block", marginTop:"15%" }}>
+                <div>
+                    <span className="text-white"style={{ fontSize:"24px", fontWeight:"300"}}>WANT TO CHANGE ROOMS?</span>
+                    <h2 className="text-white grad" style={{ fontSize:"60px",marginTop:"-0.5%" }}>CHANGE YOUR ROOM</h2>
+                    <h2 className=" grad" style={{ fontSize:"72px",marginTop:"-2%" }}>IN 3 SIMPLE STEPS</h2>
+                    <button className=" text-white btn1 flex-end font-bold py-2 px-10" style={{fontSize: "16px", marginTop:"1%"}}>
+                        <a href="/register">SIGN UP</a>
+                    </button>
+                    <div className=" text-white flex-end font-bold" style={{ backgroundColor: "#FD9910", borderRadius: "12px", float: "right", fontSize: "16px" }}>
+                    <img src={Keys} alt="image1" className="keys" />
+                    </div>
                 </div>
-                <div className="flex justify-center">
-                    <img src=
-                        {landingimg}
-                        alt="hostel" />
-                </div>
-            </section>
+            </div>
 
-            <button className="bg-orange-600 text-white font-bold py-2 px-4 rounded-full mx-auto block">Get Started</button>
 
         </>
+
     )
 }
 
-export default Landing
+export default Home
