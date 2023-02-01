@@ -14,15 +14,15 @@ header > h2 {
   font-weight: 800 !important;
 }
 
-.image1{
+.image1 {
   position: absolute;
   right: 0%;
 }
 
-.image2{
+.image2 {
   position: absolute;
   bottom: 0%;
-  left:5%;
+  left: 5%;
 }
 
 .input-wrapper {
@@ -119,8 +119,6 @@ header > h2 {
   border: 1px solid rgba(255, 255, 255, 0.33);
   border-radius: 12px;
 }
-
-
 
 .phone-inputs::-webkit-inner-spin-button,
 .phone-inputs::-webkit-outer-spin-button {
@@ -282,5 +280,14 @@ header > h2 {
     background: linear-gradient(to right, #ff512f, #f09819);
     right: -300px;
     bottom: -280px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .image1 {
+    display: none;
+  }
+  .image2 {
+    display: none;
   }
 }

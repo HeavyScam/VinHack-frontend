@@ -2,17 +2,17 @@ header > h2 {
   font-size: 20px;
 }
 
-.image3{
+.image3 {
   position: absolute;
   right: 0%;
   bottom: 0%;
   z-index: -1;
 }
 
-.image4{
+.image4 {
   position: absolute;
   bottom: 0%;
-  left:10%;
+  left: 10%;
   z-index: -1;
 }
 
@@ -44,9 +44,13 @@ header > h2 {
 .request-signup-form {
   height: 620px;
   width: 650px;
-  background: linear-gradient(91.04deg, rgba(0, 0, 0, 0.09) 0.89%, rgba(35, 163, 246, 0.09) 76.88%);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 16px;
+  background: linear-gradient(
+    91.04deg,
+    rgba(0, 0, 0, 0.09) 0.89%,
+    rgba(35, 163, 246, 0.09) 76.88%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -269,7 +273,7 @@ border-radius: 16px;
   }
 }
 
-.loader{
+.loader {
   position: relative;
   display: flex;
   justify-content: center;
@@ -280,11 +284,11 @@ border-radius: 16px;
   animation: loader 2s ease infinite; */
 }
 
-button.btn-hover:hover{
+button.btn-hover:hover {
   background: linear-gradient(to right, #ff512f, #f09819);
 }
 
-.load{
+.load {
   position: absolute;
   height: 300px;
   width: 300px;
@@ -294,13 +298,23 @@ button.btn-hover:hover{
   animation: bounce2 2s ease infinite;
 }
 @keyframes bounce2 {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .fade-in-down {
-  animation: fade-in-down 2s ease ;
+  animation: fade-in-down 2s ease;
 }
 @keyframes fade-in-down {
   0% {
@@ -327,7 +341,6 @@ button.btn-hover:hover{
   }
 }
 
-
 @media screen and (max-width: 600px) {
   .request-signup-form {
     width: 130%;
@@ -340,5 +353,14 @@ button.btn-hover:hover{
     background: linear-gradient(to right, #ff512f, #f09819);
     right: -300px;
     bottom: -280px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .image3 {
+    display: none;
+  }
+  .image4 {
+    display: none;
   }
 }
