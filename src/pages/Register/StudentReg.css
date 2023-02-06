@@ -39,8 +39,8 @@ header > h2 {
 }
 
 .login-signup-form {
-  height: 620px;
-  width: 650px;
+  height: fit-content;
+  width: 750px;
   background: linear-gradient(
     91.04deg,
     rgba(255, 255, 255, 0) 0.89%,
@@ -50,7 +50,7 @@ header > h2 {
   border-radius: 16px;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 60%;
   left: 50%;
   border-radius: 10px;
   padding: 50px 35px;
